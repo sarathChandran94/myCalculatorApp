@@ -32,57 +32,46 @@
 
                 <!--input starts here-->
 
-                <div class="container d-flex align-items-center flex-column border myMargin3">
-                <div class="row  myMargin">
-                    <input type="number" class="border border-danger">
-                    <label for="input1"> Input #1</label>
-                </div>
-
-                <div class="row myMargin ">
-                    <input type="number" class="border border-danger">
-                    <label for="input2"> Input #2</label>
-                </div>
-
-                <div class="row myMargin">
-                    <input type="number" class="border border-danger">
-                    <label for="result">-Result-</label>
-                </div>
+                <div class="container mb-1 border border-dark rounded myMargin3">
+                    <div class="container justify-content-center rounded myMargin">
+                        <textarea class="container" id="ipBox1" cols="60" draggable="true"></textarea>
+                    </div>
                 </div>
                 <!--input ends here-->
 
                 <!--buttons start here-->
 
                 <!-- 1st row buttons -->
-                <div class="container border myMargin4">
+                <div class="container mt-1 border border-dark rounded myMargin4">
                 <div class="row justify-content-center myMargin">
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">7</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">8</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">9</button>
-                    <button class="col-md-2 bg-danger text-center myMargin2 btn text-light">+</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="7">7</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="8">8</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="9">9</button>
+                    <button class="col-2 bg-danger text-center myMargin2 btn text-light" id="div" value="/" >/</button>
                 </div>
 
                 <!-- 2nd row buttons -->
                 <div class="row justify-content-center myMargin">
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">4</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">5</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">6</button>
-                    <button class="col-md-2 bg-danger text-center myMargin2 btn text-light">-</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="4">4</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="5">5</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="6">6</button>
+                    <button class="col-2 bg-danger text-center myMargin2 btn text-light" id="mul" value="*" >*</button>
                 </div>
 
                 <!-- 3rd row butttons -->
                 <div class="row justify-content-center myMargin">
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">1</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">2</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">3</button>
-                    <button class="col-md-2 bg-danger text-center myMargin2 btn text-light">*</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="1">1</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="2">2</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="3">3</button>
+                    <button class="col-2 bg-danger text-center myMargin2 btn text-light" id="sub" value="-" >-</button>
                 </div>
 
                 <!-- 4th row buttons -->
                 <div class="row justify-content-center myMargin">
-                    <button class="col-md-2 bg-info text-center myMargin2 btn text-light">.</button>
-                    <button class="col-md-2 bg-success text-center myMargin2 btn text-light">0</button>
-                    <button class="col-md-2 bg-info text-center myMargin2 btn text-light"><--</button>
-                    <button class="col-md-2 bg-danger text-center myMargin2 btn text-light">%</button>
+                    <button class="col-2 bg-info text-center myMargin2 btn text-light" id="reset" value="Reset">C</button>
+                    <button class="col-2 bg-success text-center myMargin2 btn text-light num" value="0">0</button>
+                    <button class="col-2 bg-info text-center myMargin2 btn text-light" id="equals" value="=">=</button>
+                    <button class="col-2 bg-danger text-center myMargin2 btn text-light" id="add" value="+" >+</button>
                 </div>
                 </div>
 
@@ -95,10 +84,12 @@
     <footer>
         <br><br><br><br>
         <div class="card-footer text-muted text-center">
-            &copy Sarath C - FSD, Koratty Batch
+            &copy Sarath C
         </div>
     </footer>
     <!-- footer ends here -->
+
+    <script src="/script.js"></script>
 
 </body>
 </html>

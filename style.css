@@ -17,3 +17,11 @@
     padding: 10px;
 
 }
+
+#ipBox1 {
+    border-radius: 10px;
+    border-width: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: xx-large;
+}
